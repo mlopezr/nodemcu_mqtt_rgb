@@ -18,7 +18,7 @@ It uses:
 * Connect common cathode of RGB LED to GND and R,G,B anodes to pins 7,6,5 through 100 ohm resistors.
 * Set up a MQTT broker, for instance using [CloudMQTT](https://www.cloudmqtt.com/). Update server, user and password in `mqtt_rgb.lua`.
 * Flash lua files.
-* After first boot, a WiFi Access Point named "SetupGadget..." is created. Connect to it and browse http://192.168.1.4 to configure the WiFi SSID and password to be used subsequently.
+* After first boot, a WiFi Access Point named "SetupGadget..." is created. Connect to it (you will get an IPv4 address through DHCP) and browse http://192.168.4.1 to configure the WiFi SSID and password to be used subsequently.
 * The on-board LED blinks once every second when not connected and once every 10 seconds once connected.
 * Use any MQTT client such as [CloudMQTT web console](https://api.cloudmqtt.com/sso/cloudmqtt/websocket) to publish messages.
  * topic `node/led` controls on-board LED using payloads:
